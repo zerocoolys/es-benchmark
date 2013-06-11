@@ -1,0 +1,90 @@
+<html>
+	<head>
+		<style>
+			/*table td {
+				text-align: center;
+				border: 1px solid #CCC;
+			}*/
+			/*.left td{
+				text-align: left;
+			}*/
+		</style>
+		<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	</head>
+	<body>
+		<script src="http://code.highcharts.com/highcharts.js"></script>
+		<script src="http://code.highcharts.com/modules/exporting.js"></script>
+		<h2>jvmmonitor</h2><script type="text/javascript">
+	$(function () {
+	        $('#408HgK_9TIG5xJcIH0usxg').highcharts({
+	            chart: {
+	                zoomType: 'x',
+	                spacingRight: 20
+	            },
+	            title: {
+	                text: 'Terrax the Tamer'
+	            },
+	            subtitle: {
+	                text: document.ontouchstart === undefined ?
+	                    'Click and drag in the plot area to zoom in' :
+	                    'Drag your finger over the plot to zoom in'
+	            },
+	            xAxis: {
+	                tickInterval: 1,
+	                title: {
+	                    text: ''
+	                },
+			        min:0,
+			        tickLength: 0,
+			        labels: {
+		                step: 18
+		            }
+	            },
+	            yAxis: {
+	                title: {
+	                    text: 'Memery Used'
+	                },
+			                min: 0
+	            },
+	            tooltip: {
+	                shared: true
+	            },
+	            legend: {
+	                enabled: false
+	            },
+	            plotOptions: {
+	                area: {
+	                    fillColor: {
+	                        linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1},
+	                        stops: [
+	                            [0, Highcharts.getOptions().colors[0]],
+	                            [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+	                        ]
+	                    },
+	                    lineWidth: 1,
+	                    marker: {
+	                        enabled: false
+	                    },
+	                    shadow: false,
+	                    states: {
+	                        hover: {
+	                            lineWidth: 1
+	                        }
+	                    },
+	                    threshold: null
+	                }
+	            },
+	    
+	            series: [{ type: 'area', name: 'memory used', pointInterval: 1, pointStart: 0, data: [748683264, 748683264, 748683264, 748683264, 780140544, 780140544, 784334848, 784334848, 790626304, 790626304, 792723456, 792723456, 796917760, 796917760, 801112064, 801112064, 805306368, 805306368, 809500672, 809500672, 813694976, 813694976, 817889280, 817889280, 822083584, 822083584, 838860800, 838860800, 840957952, 840957952, 843055104, 843055104, 843055104, 843055104, 845152256, 845152256, 845152256, 845152256, 847249408, 847249408, 113246208, 113246208, 121634816, 121634816, 130023424, 130023424, 138412032, 138412032, 144703488, 144703488, 153092096, 153092096, 161480704, 161480704, 169869312, 169869312, 178257920, 178257920, 188743680, 188743680, 199229440, 199229440, 209715200, 209715200, 220200960, 220200960, 230686720, 230686720, 241172480, 241172480, 251658240, 251658240, 253755392, 253755392, 260046848, 260046848, 287309824, 287309824, 289406976, 289406976, 293601280, 293601280, 295698432, 295698432, 297795584, 297795584, 301989888, 301989888, 304087040, 304087040, 308281344, 308281344, 310378496, 310378496, 312475648, 312475648, 316669952, 316669952, 318767104, 318767104, 322961408, 322961408, 325058560, 325058560, 331350016, 331350016, 383778816, 383778816, 505413632, 505413632, 620756992, 620756992, 750780416, 750780416, 90177536, 90177536, 190840832, 190840832, 283115520, 283115520, 373293056, 373293056, 473956352, 473956352, 576716800, 576716800, 687865856, 687865856, 738197504, 738197504, 740294656, 740294656, 744488960, 744488960, 748683264, 748683264, 752877568, 752877568, 757071872, 757071872, 761266176, 761266176, 763363328, 763363328, 767557632, 767557632, 769654784, 769654784, 773849088, 773849088, 778043392, 778043392, 778043392, 778043392, 840957952, 840957952, 321798192, 321798192, 359546928, 359546928, 359546928, 359546928, 361644080, 361644080, 361644080, 361644080, 363741232, 363741232, 363741232, 363741232, 365838384, 365838384, 365838384, 365838384, 367935536, 367935536, 378421296, 378421296, 401489968, 401489968, 439238704, 439238704, 487473200, 487473200, 541999152, 541999152, 586039344, 586039344] }]
+	        });
+	    });
+</script>
+
+<table class="table"><tr><td>JVM configuration</td><td>[-Xms4g, -Xmx4g, -Xss256k, -Djava.awt.headless=true, -XX:+UseG1GC, -XX:+UseCondCardMark, -XX:+HeapDumpOnOutOfMemoryError, -agentlib:jdwp=transport=dt_socket,address=10000,server=y,suspend=n, -Delasticsearch, -Des.foreground=yes, -Des.path.home=/home/jason/download/elasticsearch-0.20.6]</td></tr><tr><td>System Properties </td><td>java.vm.version=23.7-b01<br>es.path.home=/home/jason/download/elasticsearch-0.20.6<br>java.vendor.url=http://java.oracle.com/<br>sun.jnu.encoding=UTF-8<br>es.logger.prefix=<br>java.vm.info=mixed mode<br>java.awt.headless=true<br>user.dir=/home/jason/download/elasticsearch-0.20.6<br>sun.cpu.isalist=<br>java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment<br>sun.os.patch.level=unknown<br>java.io.tmpdir=/tmp<br>sun.nio.ch.bugLevel=<br>user.home=/root<br>java.awt.printerjob=sun.print.PSPrinterJob<br>java.version=1.7.0_17<br>file.encoding.pkg=sun.io<br>java.vendor.url.bug=http://bugreport.sun.com/bugreport/<br>file.encoding=UTF-8<br>line.separator=
+<br>sun.java.command=org.elasticsearch.bootstrap.ElasticSearch<br>sun.rmi.dgc.client.gcInterval=36000000<br>java.vm.specification.vendor=Oracle Corporation<br>java.vm.vendor=Oracle Corporation<br>java.class.path=:/home/jason/download/elasticsearch-0.20.6/lib/elasticsearch-0.20.6.jar:/home/jason/download/elasticsearch-0.20.6/lib/lucene-core-3.6.2.jar:/home/jason/download/elasticsearch-0.20.6/lib/lucene-memory-3.6.2.jar:/home/jason/download/elasticsearch-0.20.6/lib/jts-1.12.jar:/home/jason/download/elasticsearch-0.20.6/lib/log4j-1.2.17.jar:/home/jason/download/elasticsearch-0.20.6/lib/lucene-highlighter-3.6.2.jar:/home/jason/download/elasticsearch-0.20.6/lib/lucene-analyzers-3.6.2.jar:/home/jason/download/elasticsearch-0.20.6/lib/snappy-java-1.0.4.1.jar:/home/jason/download/elasticsearch-0.20.6/lib/spatial4j-0.3.jar:/home/jason/download/elasticsearch-0.20.6/lib/elasticsearch-0.20.6.jar:/home/jason/download/elasticsearch-0.20.6/lib/lucene-queries-3.6.2.jar:/home/jason/download/elasticsearch-0.20.6/lib/jna-3.3.0.jar:/home/jason/download/elasticsearch-0.20.6/lib/sigar/sigar-1.6.4.jar<br>sun.io.unicode.encoding=UnicodeLittle<br>os.arch=amd64<br>user.name=root<br>user.language=en<br>java.runtime.version=1.7.0_17-b02<br>sun.boot.class.path=/home/jason/download/jdk1.7.0_17/jre/lib/resources.jar:/home/jason/download/jdk1.7.0_17/jre/lib/rt.jar:/home/jason/download/jdk1.7.0_17/jre/lib/sunrsasign.jar:/home/jason/download/jdk1.7.0_17/jre/lib/jsse.jar:/home/jason/download/jdk1.7.0_17/jre/lib/jce.jar:/home/jason/download/jdk1.7.0_17/jre/lib/charsets.jar:/home/jason/download/jdk1.7.0_17/jre/lib/jfr.jar:/home/jason/download/jdk1.7.0_17/jre/classes<br>sun.cpu.endian=little<br>elasticsearch=<br>awt.toolkit=sun.awt.X11.XToolkit<br>sun.boot.library.path=/home/jason/download/jdk1.7.0_17/jre/lib/amd64<br>sun.rmi.dgc.server.gcInterval=36000000<br>java.vm.name=Java HotSpot(TM) 64-Bit Server VM<br>java.home=/home/jason/download/jdk1.7.0_17/jre<br>java.endorsed.dirs=/home/jason/download/jdk1.7.0_17/jre/lib/endorsed<br>sun.management.compiler=HotSpot 64-Bit Tiered Compilers<br>jna.platform.library.path=/lib64<br>java.runtime.name=Java(TM) SE Runtime Environment<br>java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib<br>file.separator=/<br>java.specification.vendor=Oracle Corporation<br>java.vm.specification.version=1.7<br>sun.java.launcher=SUN_STANDARD<br>user.timezone=Asia/Chongqing<br>os.name=Linux<br>path.separator=:<br>java.ext.dirs=/home/jason/download/jdk1.7.0_17/jre/lib/ext:/usr/java/packages/lib/ext<br>sun.arch.data.model=64<br>java.specification.name=Java Platform API Specification<br>os.version=3.2.0-23-generic<br>user.country=US<br>java.class.version=51.0<br>java.vendor=Oracle Corporation<br>java.vm.specification.name=Java Virtual Machine Specification<br>es.foreground=yes<br>java.specification.version=1.7<br></td></tr></table>
+
+<div id="408HgK_9TIG5xJcIH0usxg" style="min-width: 400px; height: 400px; margin: 0 auto"></div><table class="table"><thead><tr><th>gc name</th><th>gc count</th><th>gc time</th></tr></thead><tbody><tr><td>G1 Young Generation</td><td>3</td><td>498ms</td></tr><tr><td>G1 Old Generation</td><td>0</td><td>0ms</td></tr></tbody></table><h2>highlightsearch</h2><table class="table"><thead><tr><th>name</th><th>size</th><th>total time</th><th>average time</th></tr></thead><tbody><tr><td>highlight</td><td>200</td><td>3.2s</td><td>16ms</td></tr></tbody></table><h2>histogramfacetsearch</h2><table class="table"><thead><tr><th>name</th><th>size</th><th>total time</th><th>average time</th></tr></thead><tbody><tr><td>datehistrogram</td><td>200</td><td>7s</td><td>35ms</td></tr></tbody></table><h2>index</h2><table class="table"><thead><tr><th>Size</th><th>Total Time</th><th>TPS</th></tr></thead></table><h2>queryfilterfacet</h2><table class="table"><thead><tr><th>name</th><th>size</th><th>total time</th><th>average time</th></tr></thead><tbody><tr><td>filter_logTime_range</td><td>200</td><td>12.4s</td><td>62ms</td></tr><tr><td>query_logTime_range</td><td>200</td><td>9.7s</td><td>48ms</td></tr><tr><td>summary_projectName</td><td>200</td><td>10.5s</td><td>52ms</td></tr></tbody></table><h2>termsfacet</h2><table class="table"><tr><td>name</td><td>size</td><td>total time</td><td>average time</td></tr><tr><td>terms_projectName</td><td>200</td><td>8.7s</td><td>43ms</td></tr><tr><td>terms_logLevel</td><td>200</td><td>5.8s</td><td>29ms</td></tr><tr><td>terms_host</td><td>200</td><td>13.4s</td><td>67ms</td></tr></table>
+	</body>
+
+</html>

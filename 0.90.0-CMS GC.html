@@ -1,0 +1,90 @@
+<html>
+	<head>
+		<style>
+			/*table td {
+				text-align: center;
+				border: 1px solid #CCC;
+			}*/
+			/*.left td{
+				text-align: left;
+			}*/
+		</style>
+		<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	</head>
+	<body>
+		<script src="http://code.highcharts.com/highcharts.js"></script>
+		<script src="http://code.highcharts.com/modules/exporting.js"></script>
+		<h2>jvmmonitor</h2><script type="text/javascript">
+	$(function () {
+	        $('#mKiURQw2TL6jq_ckZ-Jbnw').highcharts({
+	            chart: {
+	                zoomType: 'x',
+	                spacingRight: 20
+	            },
+	            title: {
+	                text: 'Skullcrusher'
+	            },
+	            subtitle: {
+	                text: document.ontouchstart === undefined ?
+	                    'Click and drag in the plot area to zoom in' :
+	                    'Drag your finger over the plot to zoom in'
+	            },
+	            xAxis: {
+	                tickInterval: 1,
+	                title: {
+	                    text: ''
+	                },
+			        min:0,
+			        tickLength: 0,
+			        labels: {
+		                step: 21
+		            }
+	            },
+	            yAxis: {
+	                title: {
+	                    text: 'Memery Used'
+	                },
+			                min: 0
+	            },
+	            tooltip: {
+	                shared: true
+	            },
+	            legend: {
+	                enabled: false
+	            },
+	            plotOptions: {
+	                area: {
+	                    fillColor: {
+	                        linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1},
+	                        stops: [
+	                            [0, Highcharts.getOptions().colors[0]],
+	                            [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+	                        ]
+	                    },
+	                    lineWidth: 1,
+	                    marker: {
+	                        enabled: false
+	                    },
+	                    shadow: false,
+	                    states: {
+	                        hover: {
+	                            lineWidth: 1
+	                        }
+	                    },
+	                    threshold: null
+	                }
+	            },
+	    
+	            series: [{ type: 'area', name: 'memory used', pointInterval: 1, pointStart: 0, data: [412536704, 412536704, 412916560, 412916560, 441364848, 441364848, 459286712, 459286712, 477824752, 477824752, 362362080, 362362080, 381046608, 381046608, 398638120, 398638120, 416778944, 416778944, 434876536, 434876536, 453568376, 453568376, 471647296, 471647296, 353119136, 353119136, 371963920, 371963920, 390561168, 390561168, 408780416, 408780416, 435131768, 435131768, 437240168, 437240168, 438996136, 438996136, 441149992, 441149992, 443289928, 443289928, 445049200, 445049200, 447159424, 447159424, 449554368, 449554368, 451067424, 451067424, 453179632, 453179632, 365437656, 365437656, 401194776, 401194776, 440685080, 440685080, 478174144, 478174144, 381209728, 381209728, 418394640, 418394640, 456528544, 456528544, 499433576, 499433576, 407336600, 407336600, 461751464, 461751464, 373747304, 373747304, 413069120, 413069120, 454146640, 454146640, 491683824, 491683824, 391764976, 391764976, 431971768, 431971768, 475729464, 475729464, 392019584, 392019584, 429900856, 429900856, 466479992, 466479992, 365086224, 365086224, 405935448, 405935448, 442407160, 442407160, 461251928, 461251928, 480693000, 480693000, 495993344, 495993344, 380881848, 380881848, 395380432, 395380432, 409941152, 409941152, 425106456, 425106456, 439648416, 439648416, 455531616, 455531616, 469365488, 469365488, 485259152, 485259152, 501156432, 501156432, 378899408, 378899408, 393428448, 393428448, 408705896, 408705896, 423251288, 423251288, 437189480, 437189480, 453160344, 453160344, 468401560, 468401560, 508728840, 508728840, 444062200, 444062200, 378103792, 378103792, 458017856, 458017856, 393431960, 393431960, 471765944, 471765944, 406138560, 406138560, 484603472, 484603472, 421668880, 421668880, 456667536, 456667536, 472907512, 472907512, 490058120, 490058120, 505610816, 505610816, 381985384, 381985384, 398662496, 398662496, 414415344, 414415344, 430641648, 430641648, 446896984, 446896984, 463127376, 463127376, 480035896, 480035896, 496242392, 496242392, 374187104, 374187104, 388967608, 388967608, 405865232, 405865232, 422737184, 422737184, 435499752, 435499752, 468601224, 468601224, 507266640, 507266640, 509017688, 509017688, 389549424, 389549424, 389973336, 389973336, 392768304, 392768304, 393145568, 393145568, 395947928, 395947928, 398127328, 398127328, 399161232, 399161232, 401680472, 401680472, 494873472, 494873472, 447461128, 447461128, 395411872, 395411872, 484955024, 484955024, 513938968] }]
+	        });
+	    });
+</script>
+
+<table class="table"><tr><td>JVM configuration</td><td>[-Xms4g, -Xmx4g, -Xss256k, -Djava.awt.headless=true, -XX:+UseParNewGC, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+HeapDumpOnOutOfMemoryError, -agentlib:jdwp=transport=dt_socket,address=10000,server=y,suspend=n, -Dcom.sun.management.jmxremote, -Dcom.sun.management.jmxremote.port=9400, -Djava.rmi.server.hostname=10.34.130.201, -Dcom.sun.management.jmxremote.ssl=false, -Dcom.sun.management.jmxremote.authenticate=false, -Delasticsearch, -Des.foreground=yes, -Des.path.home=/home/jason/download/elasticsearch-0.90.0]</td></tr><tr><td>System Properties </td><td>java.vm.version=23.7-b01<br>es.path.home=/home/jason/download/elasticsearch-0.90.0<br>java.vendor.url=http://java.oracle.com/<br>sun.jnu.encoding=UTF-8<br>es.logger.prefix=<br>java.vm.info=mixed mode<br>java.awt.headless=true<br>user.dir=/home/jason/download/elasticsearch-0.90.0<br>sun.cpu.isalist=<br>java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment<br>com.sun.management.jmxremote.authenticate=false<br>sun.os.patch.level=unknown<br>com.sun.management.jmxremote.ssl=false<br>java.io.tmpdir=/tmp<br>sun.nio.ch.bugLevel=<br>user.home=/root<br>java.awt.printerjob=sun.print.PSPrinterJob<br>java.version=1.7.0_17<br>file.encoding.pkg=sun.io<br>java.vendor.url.bug=http://bugreport.sun.com/bugreport/<br>file.encoding=UTF-8<br>line.separator=
+<br>sun.java.command=org.elasticsearch.bootstrap.ElasticSearch<br>java.vm.specification.vendor=Oracle Corporation<br>java.vm.vendor=Oracle Corporation<br>java.class.path=:/home/jason/download/elasticsearch-0.90.0/lib/elasticsearch-0.90.0.jar:/home/jason/download/elasticsearch-0.90.0/lib/lucene-core-4.2.1.jar:/home/jason/download/elasticsearch-0.90.0/lib/jts-1.12.jar:/home/jason/download/elasticsearch-0.90.0/lib/lucene-join-4.2.1.jar:/home/jason/download/elasticsearch-0.90.0/lib/log4j-1.2.17.jar:/home/jason/download/elasticsearch-0.90.0/lib/lucene-codecs-4.2.1.jar:/home/jason/download/elasticsearch-0.90.0/lib/elasticsearch-0.90.0.jar:/home/jason/download/elasticsearch-0.90.0/lib/lucene-spatial-4.2.1.jar:/home/jason/download/elasticsearch-0.90.0/lib/lucene-suggest-4.2.1.jar:/home/jason/download/elasticsearch-0.90.0/lib/lucene-sandbox-4.2.1.jar:/home/jason/download/elasticsearch-0.90.0/lib/lucene-highlighter-4.2.1.jar:/home/jason/download/elasticsearch-0.90.0/lib/lucene-queries-4.2.1.jar:/home/jason/download/elasticsearch-0.90.0/lib/lucene-queryparser-4.2.1.jar:/home/jason/download/elasticsearch-0.90.0/lib/spatial4j-0.3.jar:/home/jason/download/elasticsearch-0.90.0/lib/lucene-analyzers-common-4.2.1.jar:/home/jason/download/elasticsearch-0.90.0/lib/lucene-memory-4.2.1.jar:/home/jason/download/elasticsearch-0.90.0/lib/lucene-grouping-4.2.1.jar:/home/jason/download/elasticsearch-0.90.0/lib/jna-3.3.0.jar:/home/jason/download/elasticsearch-0.90.0/lib/sigar/sigar-1.6.4.jar<br>sun.io.unicode.encoding=UnicodeLittle<br>user.language=en<br>os.arch=amd64<br>user.name=root<br>java.runtime.version=1.7.0_17-b02<br>sun.boot.class.path=/home/jason/download/jdk1.7.0_17/jre/lib/resources.jar:/home/jason/download/jdk1.7.0_17/jre/lib/rt.jar:/home/jason/download/jdk1.7.0_17/jre/lib/sunrsasign.jar:/home/jason/download/jdk1.7.0_17/jre/lib/jsse.jar:/home/jason/download/jdk1.7.0_17/jre/lib/jce.jar:/home/jason/download/jdk1.7.0_17/jre/lib/charsets.jar:/home/jason/download/jdk1.7.0_17/jre/lib/jfr.jar:/home/jason/download/jdk1.7.0_17/jre/classes<br>sun.cpu.endian=little<br>elasticsearch=<br>awt.toolkit=sun.awt.X11.XToolkit<br>sun.boot.library.path=/home/jason/download/jdk1.7.0_17/jre/lib/amd64<br>java.vm.name=Java HotSpot(TM) 64-Bit Server VM<br>java.home=/home/jason/download/jdk1.7.0_17/jre<br>java.endorsed.dirs=/home/jason/download/jdk1.7.0_17/jre/lib/endorsed<br>sun.management.compiler=HotSpot 64-Bit Tiered Compilers<br>jna.platform.library.path=/lib64<br>java.runtime.name=Java(TM) SE Runtime Environment<br>java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib<br>file.separator=/<br>java.specification.vendor=Oracle Corporation<br>java.rmi.server.randomIDs=true<br>java.vm.specification.version=1.7<br>sun.java.launcher=SUN_STANDARD<br>user.timezone=Asia/Chongqing<br>os.name=Linux<br>path.separator=:<br>java.ext.dirs=/home/jason/download/jdk1.7.0_17/jre/lib/ext:/usr/java/packages/lib/ext<br>sun.arch.data.model=64<br>com.sun.management.jmxremote.port=9400<br>java.specification.name=Java Platform API Specification<br>os.version=3.2.0-23-generic<br>com.sun.management.jmxremote=<br>user.country=US<br>java.class.version=51.0<br>java.vendor=Oracle Corporation<br>java.rmi.server.hostname=10.34.130.201<br>java.vm.specification.name=Java Virtual Machine Specification<br>es.foreground=yes<br>java.specification.version=1.7<br></td></tr></table>
+
+<div id="mKiURQw2TL6jq_ckZ-Jbnw" style="min-width: 400px; height: 400px; margin: 0 auto"></div><table class="table"><thead><tr><th>gc name</th><th>gc count</th><th>gc time</th></tr></thead><tbody><tr><td>ParNew</td><td>21</td><td>916ms</td></tr><tr><td>ConcurrentMarkSweep</td><td>0</td><td>0ms</td></tr></tbody></table><h2>highlightsearch</h2><table class="table"><thead><tr><th>name</th><th>size</th><th>total time</th><th>average time</th></tr></thead><tbody><tr><td>highlight</td><td>200</td><td>3.2s</td><td>16ms</td></tr></tbody></table><h2>histogramfacetsearch</h2><table class="table"><thead><tr><th>name</th><th>size</th><th>total time</th><th>average time</th></tr></thead><tbody><tr><td>datehistrogram</td><td>200</td><td>7.6s</td><td>38ms</td></tr></tbody></table><h2>index</h2><table class="table"><thead><tr><th>Size</th><th>Total Time</th><th>TPS</th></tr></thead></table><h2>queryfilterfacet</h2><table class="table"><thead><tr><th>name</th><th>size</th><th>total time</th><th>average time</th></tr></thead><tbody><tr><td>filter_logTime_range</td><td>200</td><td>16s</td><td>80ms</td></tr><tr><td>query_logTime_range</td><td>200</td><td>7.5s</td><td>37ms</td></tr><tr><td>summary_projectName</td><td>200</td><td>14.7s</td><td>73ms</td></tr></tbody></table><h2>termsfacet</h2><table class="table"><tr><td>name</td><td>size</td><td>total time</td><td>average time</td></tr><tr><td>terms_projectName</td><td>200</td><td>12.9s</td><td>64ms</td></tr><tr><td>terms_logLevel</td><td>200</td><td>8.2s</td><td>41ms</td></tr><tr><td>terms_host</td><td>200</td><td>20.5s</td><td>102ms</td></tr></table>
+	</body>
+
+</html>
